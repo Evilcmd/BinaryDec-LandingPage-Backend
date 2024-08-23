@@ -29,7 +29,7 @@ func main() {
 
 	port := os.Getenv("PORT")
 	if port == "" {
-		log.Fatal("error getting port")
+		port = "80"
 	}
 	server := server.NewServer(port, apiCfg)
 
